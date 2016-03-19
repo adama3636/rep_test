@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="0dp"
+    android:layout_marginBottom="0dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    >
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:scaleType="centerCrop"
+
+        android:id="@+id/fruit_img"/>
+    <LinearLayout
+        android:id="@+id/linearL"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/fruit_img">
+
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:text="test"
+            android:src="@drawable/missingcall"
+            android:id="@+id/libelle_action"/>
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="-5dp"
+            android:text="test"
+            android:src="@drawable/call"
+            android:id="@+id/type_action"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/linearL"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
+                android:id="@+id/edudiant_name"
+                android:textColor="@color/colorTitle"
+                android:textSize="20dp"
+                android:text="Adama" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/etudiant_prenom"
+                android:paddingTop="10dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/colorTitle"
+                android:textSize="20dp"
+                android:text="Diallo" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="+2214214993"
+            android:textColor="@color/colorDetails"
+            android:id="@+id/telephone"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/colorDetails"
+        android:id="@+id/heure"/>
+</RelativeLayout>
